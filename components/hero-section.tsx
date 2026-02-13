@@ -13,13 +13,14 @@ export function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative h-screen min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 h-full w-full">
         <Image
           src="/images/hero-matcha.jpg"
           alt="YORI Matcha"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
